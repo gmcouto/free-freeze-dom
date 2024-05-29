@@ -1,0 +1,19 @@
+{
+  "name": "Free Freeze DOM",
+  "version": "1.0.0",
+  "description": "Free extension to freeze the DOM instantly",
+  "manifest_version": 3,
+  "permissions": ["contextMenus", "scripting", "activeTab"],
+  "commands": {
+    "free-freeze-dom": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Freeze the DOM instantly for free!"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
